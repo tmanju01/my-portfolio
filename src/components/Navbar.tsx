@@ -34,7 +34,7 @@ export default function Navbar() {
           aria-label="Go to top of page"
         >
           <CodeXml className="text-violet-500 w-8 h-8 group-hover:rotate-12 transition-transform duration-300" />
-          <span className="text-xl font-bold tracking-tight text-slate-100">
+          <span className="text-2xl font-bold tracking-tight text-slate-100">
             {portfolioData.name.split(" ")[0]}
             <span className="text-violet-500">.</span>
           </span>
@@ -50,7 +50,7 @@ export default function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
-                className={`text-sm font-medium transition-colors cursor-pointer relative py-1 ${
+                className={`text-base font-medium transition-colors cursor-pointer relative py-1 ${
                   isActive
                     ? "text-violet-400 font-semibold"
                     : "text-slate-300 hover:text-violet-400"
@@ -93,7 +93,7 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 onClick={closeMenu}
-                className={`text-base font-medium py-2 px-3 rounded-lg transition-colors ${
+                className={`text-lg font-medium py-2 px-3 rounded-lg transition-colors ${
                   isActive
                     ? "text-violet-400 bg-violet-500/10 font-bold border-l-4 border-violet-500"
                     : "text-slate-300 hover:text-violet-400 hover:bg-slate-800/50"
