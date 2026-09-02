@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Manju Thakor — Portfolio
 
-## Getting Started
+A modern and responsive personal portfolio website built with **Next.js**, showcasing my skills, experience, projects, education, and contact information.
 
-First, run the development server:
+## 🌐 Live Demo
+
+🔗 **Portfolio:** https://portfolio-manjuthakor.netlify.app/
+
+## ✨ Features
+
+* Responsive design for desktop, tablet, and mobile
+* Modern and clean UI
+* About Me section
+* Skills and technologies
+* Professional experience
+* Project showcase
+* Education section
+* Contact section
+* Smooth navigation
+* Mobile-friendly menu
+* Cross-browser compatibility
+* Reusable components
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* **React.js**
+* **Next.js**
+* **JavaScript**
+* **TypeScript**
+* **HTML5**
+* **CSS3**
+* **Tailwind CSS**
+* **Redux**
+
+### MERN Stack
+
+* **MongoDB**
+* **Express.js**
+* **React.js**
+* **Node.js**
+
+### Tools
+
+* **Git**
+* **GitHub**
+* **REST APIs**
+* **Lucide React**
+
+## 🚀 Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/tmanju01/my-portfolio.git
+```
+
+### Go to the project folder
+
+```bash
+cd my-portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open **http://localhost:3000** in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Responsive Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio is optimized for:
 
-## Learn More
+* 💻 Desktop
+* 📱 Tablet
+* 📱 Mobile
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 About Me
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+I’m a **Frontend Developer with 3+ years of experience**, specializing in **React.js, Next.js, JavaScript, and TypeScript**. I also have knowledge of the **MERN stack** and have worked on personal projects using **Node.js, Express.js, and MongoDB**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+I enjoy building responsive, user-friendly web applications and continuously improving my development skills.
 
-## Deploy on Vercel
+I’m currently looking for a **Frontend/React.js or MERN Developer opportunity** where I can work on real-world projects and continue growing as a developer.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created for personal portfolio and demonstration purposes.
