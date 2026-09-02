@@ -5,12 +5,12 @@ import { GraduationCap, Calendar, Award } from "lucide-react";
 
 export default function Education() {
   return (
-    <section id="education" aria-label="Education & Certifications" className="py-24 relative bg-[#0f172a]">
+    <section id="education" aria-label="Education & Certifications" className="py-24 relative bg-sky-50/50 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="mb-12 text-center flex flex-col items-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Education &amp; Certifications</h2>
-          <div className="w-20 h-1 bg-violet-500 rounded-full" />
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">Education &amp; Certifications</h2>
+          <div className="w-20 h-1 bg-sky-500 rounded-full" />
         </div>
 
         {/* Education Grid Cards */}
@@ -18,30 +18,30 @@ export default function Education() {
           {portfolioData.education.map((item) => (
             <div
               key={item.degree}
-              className="bg-slate-800/40 p-8 rounded-2xl border border-slate-700/50 hover:border-violet-500/50 transition-colors group flex flex-col justify-between"
+              className="bg-white p-8 rounded-2xl border border-sky-100 shadow-md hover:border-sky-300 transition-all group flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-4 mb-4">
-                  <div className="bg-violet-500/10 p-3 rounded-xl border border-violet-500/20 group-hover:scale-110 transition-transform">
-                    <GraduationCap className="w-6 h-6 text-violet-400" />
+                  <div className="bg-sky-50 p-3 rounded-xl border border-sky-200 group-hover:scale-110 transition-transform">
+                    <GraduationCap className="w-6 h-6 text-sky-600" />
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-slate-400 bg-slate-900/60 px-3 py-1.5 rounded-full border border-slate-800">
-                    <Calendar className="w-4 h-4 text-violet-400" />
+                  <div className="flex items-center gap-2 text-sm font-medium text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full border border-sky-200">
+                    <Calendar className="w-4 h-4 text-sky-500" />
                     <span>{item.period}</span>
                   </div>
                 </div>
 
-                <h3 className="text-2xl font-bold text-slate-100 mb-1">{item.degree}</h3>
-                <p className="text-violet-400 font-medium text-lg mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-1">{item.degree}</h3>
+                <p className="text-sky-600 font-semibold text-lg mb-4">
                   {item.institution} — {item.location}
                 </p>
                 {item.details && (
-                  <p className="text-slate-400 text-sm leading-relaxed font-normal">{item.details}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed font-normal">{item.details}</p>
                 )}
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-700/40 flex items-center justify-between">
-                <span className="text-xs font-semibold px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+              <div className="mt-6 pt-4 border-t border-sky-100 flex items-center justify-between">
+                <span className="text-xs font-semibold px-3 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200">
                   {item.status}
                 </span>
               </div>
@@ -52,20 +52,20 @@ export default function Education() {
         {/* Certifications Sub-section */}
         {portfolioData.certifications && portfolioData.certifications.length > 0 && (
           <div className="mt-12">
-            <h3 className="text-2xl font-bold mb-6 text-slate-200 flex items-center gap-2">
-              <Award className="text-violet-400 w-6 h-6" />
+            <h3 className="text-2xl font-bold mb-6 text-slate-900 flex items-center gap-2">
+              <Award className="text-sky-600 w-6 h-6" />
               <span>Professional Certifications</span>
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
               {portfolioData.certifications.map((cert) => (
                 <div
                   key={cert.title}
-                  className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:border-violet-500/40 transition-colors"
+                  className="bg-white p-6 rounded-xl border border-sky-100 shadow-sm hover:border-sky-300 transition-colors"
                 >
-                  <h4 className="text-lg font-bold text-slate-100 mb-2">{cert.title}</h4>
-                  <p className="text-slate-400 text-sm">{cert.issuer}</p>
+                  <h4 className="text-lg font-bold text-slate-900 mb-2">{cert.title}</h4>
+                  <p className="text-slate-600 text-sm">{cert.issuer}</p>
                   {cert.year && (
-                    <span className="inline-block mt-3 text-xs text-violet-400 font-medium px-2 py-0.5 rounded bg-violet-500/10 border border-violet-500/20">
+                    <span className="inline-block mt-3 text-xs text-sky-700 font-semibold px-2.5 py-0.5 rounded-full bg-sky-50 border border-sky-200">
                       {cert.year}
                     </span>
                   )}

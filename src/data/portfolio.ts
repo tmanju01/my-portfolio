@@ -83,7 +83,7 @@ export const portfolioData: PortfolioData = {
     "Frontend Developer",
     "MERN Stack Developer",
     "React.js & Next.js Specialist",
-    "Full-Stack Web Developer"
+    "FullStack Web Developer"
   ],
   socials: {
     linkedin: "https://linkedin.com/in/thakor-manju",
@@ -191,7 +191,7 @@ export const portfolioData: PortfolioData = {
   ],
   certifications: [
     {
-      title: "Full-Stack Web Development with MERN",
+      title: "FullStack Web Development with MERN",
       issuer: "Udemy / freeCodeCamp"
     },
     {

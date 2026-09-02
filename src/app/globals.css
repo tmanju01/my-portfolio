@@ -1,30 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #8b5cf6;
-  --color-primary-hover: #7c3aed;
-  --color-secondary: #ec4899;
-  --color-dark-bg: #0f172a;
-  --color-dark-card: rgba(30, 41, 59, 0.4);
-  --color-dark-border: rgba(51, 65, 85, 0.5);
+  --color-primary: #0284c7;
+  --color-primary-hover: #0369a1;
+  --color-secondary: #06b6d4;
+  --color-light-bg: #f8fafc;
+  --color-light-card: #ffffff;
+  --color-light-border: #e2e8f0;
   
   --font-outfit: var(--font-outfit);
 }
 
 :root {
-  color-scheme: dark;
-  --background: #0f172a;
-  --foreground: #e2e8f0;
+  color-scheme: light;
+  --background: #f8fafc;
+  --foreground: #0f172a;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #0f172a;
+  background-color: #f8fafc;
 }
 
 body {
-  background-color: #0f172a;
-  color: #e2e8f0;
+  background-color: #f8fafc;
+  color: #0f172a;
   font-family: var(--font-outfit), system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
@@ -35,33 +35,35 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #f1f5f9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(139, 92, 246, 0.3);
+  background: rgba(2, 132, 199, 0.4);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(139, 92, 246, 0.6);
+  background: rgba(2, 132, 199, 0.7);
 }
 
-/* Custom Gradient Text */
+/* Custom Sky Blue to Cyan Gradient Text */
 .text-gradient {
-  background: linear-gradient(to right, #a78bfa, #c084fc, #f472b6);
+  background: linear-gradient(to right, #0284c7, #06b6d4, #0d9488);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Card glass styles */
+/* Light Card Glass / Shadow Styles */
 .portfolio-card {
-  background: rgba(30, 41, 59, 0.4);
-  border: 1px solid rgba(51, 65, 85, 0.5);
+  background: #ffffff;
+  border: 1px solid #e0f2fe;
+  box-shadow: 0 4px 20px -2px rgba(186, 230, 253, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-card:hover {
-  border-color: rgba(139, 92, 246, 0.5);
-  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.2);
+  border-color: #38bdf8;
+  box-shadow: 0 12px 30px -5px rgba(14, 165, 233, 0.25);
 }
+

@@ -18,41 +18,41 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" aria-label="Professional Experience" className="py-24 relative bg-[#0f172a]">
+    <section id="experience" aria-label="Professional Experience" className="py-24 relative bg-sky-50/50 scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8">
         {/* Section Header */}
         <div className="mb-12 text-center flex flex-col items-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-slate-900">
             Professional Experience
           </h2>
-          <div className="w-20 h-1 bg-violet-500 rounded-full" />
+          <div className="w-20 h-1 bg-sky-500 rounded-full" />
         </div>
 
         {/* Vertical Timeline */}
-        <div className="relative border-l-2 border-slate-800 ml-4 md:ml-10 space-y-8">
+        <div className="relative border-l-2 border-sky-200 ml-4 md:ml-10 space-y-8">
           {portfolioData.experience.map((item, idx) => {
             const isExpanded = !!expandedItems[idx];
 
             return (
               <div key={item.company + idx} className="relative pl-8 md:pl-12">
                 {/* Timeline Bullet */}
-                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-900 border-2 border-violet-500 z-10" />
+                <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-2 border-sky-500 shadow-xs z-10" />
 
                 {/* Experience Card */}
-                <div className="bg-slate-800/30 rounded-xl border border-slate-700/50 p-6 hover:bg-slate-800/50 transition-colors">
+                <div className="bg-white rounded-xl border border-sky-100 p-6 shadow-md hover:shadow-lg hover:border-sky-300 transition-all">
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-slate-100">{item.role}</h3>
-                      <p className="text-violet-400 font-medium text-lg">
+                      <h3 className="text-xl font-bold text-slate-900">{item.role}</h3>
+                      <p className="text-sky-600 font-semibold text-lg">
                         {item.company}{" "}
                         {item.location && (
-                          <span className="text-slate-400 text-sm font-normal">— {item.location}</span>
+                          <span className="text-slate-500 text-sm font-normal">— {item.location}</span>
                         )}
                       </p>
                     </div>
 
-                    <div className="flex items-center gap-2 text-sm text-slate-400 bg-slate-900/60 px-3.5 py-1.5 rounded-full whitespace-nowrap border border-slate-800">
-                      <Calendar className="w-4 h-4 text-violet-400" />
+                    <div className="flex items-center gap-2 text-sm text-sky-700 bg-sky-50 px-3.5 py-1.5 rounded-full whitespace-nowrap border border-sky-200 font-medium">
+                      <Calendar className="w-4 h-4 text-sky-500" />
                       <span>{item.period}</span>
                     </div>
                   </div>
@@ -62,7 +62,7 @@ export default function Experience() {
                     {item.skills.map((skill) => (
                       <span
                         key={skill}
-                        className="text-xs px-2.5 py-1 rounded-full border border-slate-700 bg-slate-900/40 text-slate-300"
+                        className="text-xs px-2.5 py-1 rounded-full border border-sky-200/80 bg-sky-50 text-sky-800 font-medium"
                       >
                         {skill}
                       </span>
@@ -72,7 +72,7 @@ export default function Experience() {
                   {/* Expand / Collapse Button */}
                   <button
                     onClick={() => toggleExpand(idx)}
-                    className="flex items-center gap-2 text-sm text-slate-400 hover:text-violet-400 font-medium mt-2 focus:outline-none"
+                    className="flex items-center gap-2 text-sm text-sky-600 hover:text-sky-700 font-semibold mt-2 focus:outline-none cursor-pointer"
                   >
                     <span>{isExpanded ? "Hide Responsibilities" : "View Responsibilities"}</span>
                     {isExpanded ? (
@@ -84,13 +84,13 @@ export default function Experience() {
 
                   {/* Responsibilities Details */}
                   {isExpanded && (
-                    <ul className="mt-4 space-y-3 pt-4 border-t border-slate-700/50 animate-fadeIn">
+                    <ul className="mt-4 space-y-3 pt-4 border-t border-sky-100 animate-fadeIn">
                       {item.responsibilities.map((resp, rIdx) => (
                         <li
                           key={rIdx}
-                          className="flex items-start gap-3 text-slate-300 text-sm leading-relaxed"
+                          className="flex items-start gap-3 text-slate-700 text-sm leading-relaxed"
                         >
-                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0" />
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-sky-500 flex-shrink-0" />
                           <span>{resp}</span>
                         </li>
                       ))}

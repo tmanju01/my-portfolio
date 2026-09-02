@@ -7,21 +7,22 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 bg-gradient-to-r from-violet-600/10 via-slate-900/50 to-violet-600/10 border-t border-violet-500/30 text-slate-400 text-sm">
+    <footer className="bg-gradient-to-r from-sky-50 via-cyan-50/50 to-sky-50 border-t border-sky-100 text-slate-700 text-sm py-8">
       <div className="container mx-auto px-4 md:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        {/* Brand */}
-        <div className="flex items-center gap-2">
-          <CodeXml className="text-violet-500 w-5 h-5" />
-          <span className="font-bold text-slate-100">
+        {/* Brand Logo */}
+        <a href="#home" aria-label="Go to top of page" className="flex items-center gap-2.5 group">
+          <div className="bg-gradient-to-br from-sky-500 to-cyan-500 p-2 rounded-xl group-hover:scale-110 transition-transform duration-300 shadow-md shadow-sky-500/20">
+            <span className="text-base font-extrabold text-white tracking-wider">MT</span>
+          </div>
+          <span className="text-lg font-extrabold tracking-tight text-slate-900 group-hover:text-sky-600 transition-colors">
             {portfolioData.name}
-            <span className="text-violet-500">.</span>
           </span>
-        </div>
+        </a>
 
         {/* Copyright */}
-        <p className="flex items-center gap-1.5 text-xs text-slate-400">
+        <p className="flex items-center gap-1.5 text-xs text-slate-600">
           <span>&copy; {currentYear} {portfolioData.name}. Built with Next.js &amp;</span>
-          <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline-block animate-pulse" />
+          <Heart className="w-3.5 h-3.5 text-sky-500 fill-sky-500 inline-block animate-pulse" />
         </p>
       </div>
     </footer>

@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${outfit.variable} scroll-smooth`}>
-      <body className="bg-[#030014] text-[#f3f4f6] min-h-screen antialiased">
+      <body className="bg-slate-50 text-slate-900 min-h-screen antialiased">
         {children}
       </body>
     </html>
