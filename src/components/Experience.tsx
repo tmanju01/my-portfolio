@@ -43,7 +43,7 @@ export default function Experience() {
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-slate-900">{item.role}</h3>
-                      <p className="text-sky-600 font-semibold text-lg">
+                      <p className="text-sky-700 font-semibold text-lg">
                         {item.company}{" "}
                         {item.location && (
                           <span className="text-slate-500 text-sm font-normal">— {item.location}</span>
@@ -72,7 +72,7 @@ export default function Experience() {
                   {/* Expand / Collapse Button */}
                   <button
                     onClick={() => toggleExpand(idx)}
-                    className="flex items-center gap-2 text-sm text-sky-600 hover:text-sky-700 font-semibold mt-2 focus:outline-none cursor-pointer"
+                    className="flex items-center gap-2 text-sm text-sky-700 hover:text-sky-800 font-semibold mt-2 focus:outline-none cursor-pointer"
                   >
                     <span>{isExpanded ? "Hide Responsibilities" : "View Responsibilities"}</span>
                     {isExpanded ? (

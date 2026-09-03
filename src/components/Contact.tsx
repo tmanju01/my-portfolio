@@ -28,7 +28,7 @@ export default function Contact() {
               <div className="bg-sky-50 p-4 rounded-2xl border border-sky-200 text-sky-600 group-hover:bg-gradient-to-br group-hover:from-sky-500 group-hover:to-cyan-600 group-hover:text-white transition-all duration-300 mb-4 shadow-2xs">
                 <Mail className="w-6 h-6" />
               </div>
-              <h4 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Email</h4>
+              <h3 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Email</h3>
               <p className="text-sm font-bold text-slate-900 group-hover:text-sky-600 transition-colors truncate max-w-full">
                 {portfolioData.email}
               </p>
@@ -44,7 +44,7 @@ export default function Contact() {
               <div className="bg-cyan-50 p-4 rounded-2xl border border-cyan-200 text-cyan-600 group-hover:bg-gradient-to-br group-hover:from-sky-500 group-hover:to-cyan-600 group-hover:text-white transition-all duration-300 mb-4 shadow-2xs">
                 <FaWhatsapp className="w-6 h-6" />
               </div>
-              <h4 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">WhatsApp</h4>
+              <h3 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">WhatsApp</h3>
               <p className="text-sm font-bold text-slate-900 group-hover:text-cyan-600 transition-colors">
                 {portfolioData.phone}
               </p>
@@ -55,7 +55,7 @@ export default function Contact() {
               <div className="bg-teal-50 p-4 rounded-2xl border border-teal-200 text-teal-600 group-hover:bg-gradient-to-br group-hover:from-sky-500 group-hover:to-cyan-600 group-hover:text-white transition-all duration-300 mb-4 shadow-2xs">
                 <MapPin className="w-6 h-6" />
               </div>
-              <h4 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Location</h4>
+              <h3 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Location</h3>
               <p className="text-sm font-bold text-slate-900">{portfolioData.location}</p>
             </div>
           </div>

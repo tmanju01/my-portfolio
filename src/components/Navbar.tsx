@@ -58,8 +58,8 @@ export default function Navbar() {
                 key={item.label}
                 href={item.href}
                 className={`text-sm lg:text-base font-semibold transition-colors cursor-pointer relative py-1 whitespace-nowrap ${isActive
-                    ? "text-sky-600 font-bold"
-                    : "text-slate-800 hover:text-sky-600"
+                    ? "text-sky-700 font-bold"
+                    : "text-slate-800 hover:text-sky-700"
                   }`}
               >
                 {item.label}
@@ -99,8 +99,8 @@ export default function Navbar() {
                 href={item.href}
                 onClick={closeMenu}
                 className={`text-lg font-semibold py-2 px-3 rounded-lg transition-colors ${isActive
-                    ? "text-sky-600 bg-sky-50 font-bold border-l-4 border-sky-500"
-                    : "text-slate-800 hover:text-sky-600 hover:bg-sky-50"
+                    ? "text-sky-700 bg-sky-50 font-bold border-l-4 border-sky-500"
+                    : "text-slate-800 hover:text-sky-700 hover:bg-sky-50"
                   }`}
               >
                 {item.label}

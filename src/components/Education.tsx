@@ -32,7 +32,7 @@ export default function Education() {
                 </div>
 
                 <h3 className="text-2xl font-bold text-slate-900 mb-1">{item.degree}</h3>
-                <p className="text-sky-600 font-semibold text-lg mb-4">
+                <p className="text-sky-700 font-semibold text-lg mb-4">
                   {item.institution} — {item.location}
                 </p>
                 {item.details && (

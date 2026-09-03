@@ -53,7 +53,7 @@ export default function About() {
             {/* Contact Details Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 border-t border-sky-100 pt-8 w-full">
               <div className="flex flex-col space-y-1">
-                <span className="text-xs text-sky-600 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                <span className="text-xs text-sky-700 uppercase tracking-wider font-bold flex items-center gap-1.5">
                   <Mail className="w-3.5 h-3.5 text-sky-500" /> Email
                 </span>
                 <a
@@ -65,7 +65,7 @@ export default function About() {
               </div>
 
               <div className="flex flex-col space-y-1">
-                <span className="text-xs text-sky-600 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                <span className="text-xs text-sky-700 uppercase tracking-wider font-bold flex items-center gap-1.5">
                   <FaWhatsapp className="w-3.5 h-3.5 text-sky-500" /> WhatsApp
                 </span>
                 <a
@@ -79,7 +79,7 @@ export default function About() {
               </div>
 
               <div className="flex flex-col space-y-1">
-                <span className="text-xs text-sky-600 uppercase tracking-wider font-bold flex items-center gap-1.5">
+                <span className="text-xs text-sky-700 uppercase tracking-wider font-bold flex items-center gap-1.5">
                   <MapPin className="w-3.5 h-3.5 text-sky-500" /> Location
                 </span>
                 <span className="text-sm font-semibold text-slate-800">

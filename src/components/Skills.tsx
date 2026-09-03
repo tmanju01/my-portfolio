@@ -130,7 +130,7 @@ export default function Skills() {
 
                 {/* Box Icon Container */}
                 <div className={`w-14 h-14 rounded-2xl mb-3 flex items-center justify-center border ${iconData.bg} group-hover:scale-110 transition-transform duration-300 shadow-2xs`}>
-                  <IconComponent className={`w-7 h-7 ${iconData.color}`} />
+                  <IconComponent className={`w-7 h-7 ${iconData.color}`} title={skillItem.name} />
                 </div>
 
                 {/* Skill Name */}
