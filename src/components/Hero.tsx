@@ -91,7 +91,7 @@ export default function Hero() {
           </div>
 
           {/* Social Links Row */}
-          <div className="flex items-center gap-4 animate-fade-in-up animation-delay-500" role="list" aria-label="Social profiles">
+          <div className="flex items-center gap-4 animate-fade-in-up animation-delay-500" aria-label="Social profiles">
             <a
               href={portfolioData.socials.github}
               target="_blank"
@@ -130,6 +130,7 @@ export default function Hero() {
                 src="/profile-pic.png"
                 alt={portfolioData.name}
                 fill
+                sizes="(max-width: 768px) 16rem, (max-width: 1200px) 20rem, 24rem"
                 priority
                 className="object-cover object-[center_15%]"
               />

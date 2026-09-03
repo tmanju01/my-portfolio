@@ -1,44 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
-export function useScrollSpy(ids: string[], offset = 200) {
+export function useScrollSpy(ids: string[], rootMargin = "-10% 0px -40% 0px") {
   const [activeId, setActiveId] = useState<string>("");
+  const observer = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + offset;
+    if (!ids || ids.length === 0) return;
 
-      // Check if we are near the bottom of the page
-      if (
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 50
-      ) {
-        setActiveId(ids[ids.length - 1]);
-        return;
-      }
-
-      let currentActive = ids[0];
-      for (const id of ids) {
-        const element = document.getElementById(id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          const top = rect.top + window.scrollY;
-          if (scrollPosition >= top) {
-            currentActive = id;
+    // Use IntersectionObserver to avoid forced reflows on scroll
+    observer.current = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.id);
           }
-        }
+        });
+      },
+      {
+        rootMargin: rootMargin,
+        threshold: 0,
       }
+    );
 
-      setActiveId(currentActive);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    // Initial run
-    handleScroll();
+    ids.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.current?.observe(element);
+      }
+    });
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      observer.current?.disconnect();
     };
-  }, [ids, offset]);
+  }, [ids, rootMargin]);
 
   return activeId;
 }

@@ -17,10 +17,15 @@ const navItems = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const activeSection = useScrollSpy(
-    ["home", "about", "skills", "experience", "projects", "education", "contact"],
-    150
-  );
+  const activeSection = useScrollSpy([
+    "home",
+    "about",
+    "skills",
+    "experience",
+    "projects",
+    "education",
+    "contact",
+  ]);
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
