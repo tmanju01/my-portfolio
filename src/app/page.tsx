@@ -7,10 +7,12 @@ import Projects from "@/components/Projects";
 import Education from "@/components/Education";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import BackgroundShapes from "@/components/BackgroundShapes";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 selection:bg-sky-500/20">
+    <div className="flex flex-col min-h-screen bg-slate-50 text-slate-900 selection:bg-sky-500/20 relative">
+      <BackgroundShapes />
       {/* Navigation bar */}
       <Navbar />
 

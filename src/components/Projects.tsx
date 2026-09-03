@@ -7,7 +7,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <section id="projects" aria-label="Featured Software Projects" className="py-24 bg-white scroll-mt-20">
+    <section id="projects" aria-label="Featured Software Projects" className="py-12 bg-white scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="mb-12 text-center flex flex-col items-center">

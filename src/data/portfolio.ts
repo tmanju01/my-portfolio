@@ -134,9 +134,7 @@ export const portfolioData: PortfolioData = {
       category: "SaaS Platform",
       image: "/images/texture.svg",
       tags: ["React.js", "HTML5/CSS3", "Django", "OpenAI API", "REST APIs"],
-      links: {
-        code: "https://github.com/tmanju01"
-      },
+      links: {},
       featured: true
     },
     {
@@ -145,9 +143,7 @@ export const portfolioData: PortfolioData = {
       category: "MERN Stack",
       image: "/images/sharelyze.svg",
       tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT Auth"],
-      links: {
-        code: "https://github.com/tmanju01"
-      },
+      links: {},
       featured: true
     }
   ],

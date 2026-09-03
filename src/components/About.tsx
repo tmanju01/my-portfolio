@@ -1,7 +1,8 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { Download, Globe, Server, Database, Cpu, Mail, Phone, MapPin } from "lucide-react";
+import { Download, Globe, Server, Database, Cpu, Mail, MapPin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const categoryIcons = {
   Globe: Globe,
@@ -12,7 +13,7 @@ const categoryIcons = {
 
 export default function About() {
   return (
-    <section id="about" aria-label="About Section" className="py-24 bg-white relative overflow-hidden scroll-mt-20">
+    <section id="about" aria-label="About Section" className="py-12 bg-white relative overflow-hidden scroll-mt-20">
       {/* Background blur overlays */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-400/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
@@ -65,10 +66,12 @@ export default function About() {
 
               <div className="flex flex-col space-y-1">
                 <span className="text-xs text-sky-600 uppercase tracking-wider font-bold flex items-center gap-1.5">
-                  <Phone className="w-3.5 h-3.5 text-sky-500" /> Phone
+                  <FaWhatsapp className="w-3.5 h-3.5 text-sky-500" /> WhatsApp
                 </span>
                 <a
-                  href={`tel:${portfolioData.phone.replace(/\s+/g, "")}`}
+                  href={`https://wa.me/${portfolioData.phone.replace(/\D/g, "")}`}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm font-semibold text-slate-800 hover:text-sky-600 transition-colors"
                 >
                   {portfolioData.phone}

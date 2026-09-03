@@ -1,12 +1,12 @@
 "use client";
 
 import { portfolioData } from "@/data/portfolio";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Mail, MapPin } from "lucide-react";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="contact" aria-label="Contact Section" className="py-24 bg-white relative scroll-mt-20">
+    <section id="contact" aria-label="Contact Section" className="py-12 bg-white relative scroll-mt-20">
       <div className="container mx-auto px-4 md:px-8">
         {/* Header */}
         <div className="max-w-3xl mx-auto text-center mb-16 flex flex-col items-center">
@@ -34,15 +34,17 @@ export default function Contact() {
               </p>
             </a>
 
-            {/* Phone Card */}
+            {/* WhatsApp Card */}
             <a
-              href={`tel:${portfolioData.phone.replace(/\s+/g, "")}`}
+              href={`https://wa.me/${portfolioData.phone.replace(/\D/g, "")}`}
+              target="_blank"
+              rel="noreferrer"
               className="bg-white p-6 rounded-2xl border border-sky-100 shadow-md hover:border-sky-400 hover:shadow-xl hover:shadow-sky-100/80 transition-all duration-300 flex flex-col items-center text-center group hover:-translate-y-1"
             >
               <div className="bg-cyan-50 p-4 rounded-2xl border border-cyan-200 text-cyan-600 group-hover:bg-gradient-to-br group-hover:from-sky-500 group-hover:to-cyan-600 group-hover:text-white transition-all duration-300 mb-4 shadow-2xs">
-                <Phone className="w-6 h-6" />
+                <FaWhatsapp className="w-6 h-6" />
               </div>
-              <h4 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">Phone</h4>
+              <h4 className="text-xs text-slate-500 font-bold uppercase tracking-wider mb-1">WhatsApp</h4>
               <p className="text-sm font-bold text-slate-900 group-hover:text-cyan-600 transition-colors">
                 {portfolioData.phone}
               </p>

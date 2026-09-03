@@ -73,7 +73,7 @@ export default function Skills() {
       : allSkillsList.filter((s) => s.category === selectedCategory);
 
   return (
-    <section id="skills" aria-label="Skills & Expertise" className="py-24 bg-sky-50/50 relative overflow-hidden scroll-mt-20">
+    <section id="skills" aria-label="Skills & Expertise" className="py-12 bg-sky-50/50 relative overflow-hidden scroll-mt-20">
       {/* Ambient glows */}
       <div className="absolute top-10 left-10 w-96 h-96 bg-sky-300/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 right-10 w-96 h-96 bg-cyan-300/20 rounded-full blur-[120px] pointer-events-none" />
