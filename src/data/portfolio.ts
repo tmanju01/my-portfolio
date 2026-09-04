@@ -97,7 +97,7 @@ export const portfolioData: PortfolioData = {
     {
       title: "Frontend",
       icon: "Globe",
-      skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Vanilla JS", "Redux", "State Management", "Responsive Design", "Web APIs"]
+      skills: ["React.js", "Next.js", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Vanilla JS", "Redux", "State Management", "Responsive Design", "Cross-Browser Compatibility", "Web APIs"]
     },
     {
       title: "Backend & APIs",
@@ -150,16 +150,18 @@ export const portfolioData: PortfolioData = {
   experience: [
     {
       company: "PySquad Informatics",
-      role: "Frontend Developer",
+      role: "Full Stack Developer",
       location: "Ahmedabad, Gujarat",
       period: "Sep 2023 – Present",
       skills: ["React.js", "Next.js", "Tailwind CSS", "Ant Design", "Node.js", "Express.js", "MongoDB"],
       responsibilities: [
-        "Develop and maintain 3 production SaaS applications using React.js, Next.js, and Tailwind CSS.",
-        "Build shared UI component libraries to maintain design consistency and reduce UI bugs across modules.",
-        "Integrate 10+ RESTful APIs for authentication, real-time data updates, and paginated lists.",
-        "Develop custom Node.js and Express.js backend endpoints with MongoDB for data management.",
-        "Improve dashboard load times and rendering speed using React memoization (useMemo/useCallback) and virtualized lists."
+        "Developed full-stack web applications using MongoDB, Express.js, React.js, Next.js, and Node.js.",
+        "Designed and integrated secure REST APIs with Express.js and Node.js.",
+        "Managed MongoDB databases using Mongoose for efficient data storage and retrieval.",
+        "Built responsive and user-friendly interfaces using React.js, Next.js, Tailwind CSS, Bootstrap, and Ant Design.",
+        "Implemented JWT authentication, authorization, and role-based access control.",
+        "Optimized application performance through lazy loading, code splitting, and API optimization.",
+        "Collaborated with cross-functional teams using Git and GitHub in an Agile development environment."
       ]
     },
     {
@@ -169,7 +171,7 @@ export const portfolioData: PortfolioData = {
       period: "Jan 2023 – Jun 2023",
       skills: ["HTML5", "CSS3", "JavaScript", "React.js", "REST APIs", "Chrome DevTools"],
       responsibilities: [
-        "Created responsive landing pages and web interface components using HTML5, CSS3, and React.js.",
+        "Created responsive landing pages and web interface components using HTML5, CSS3, and React.js, ensuring cross-browser compatibility.",
         "Connected frontend forms and views to backend REST APIs across multiple project modules.",
         "Used Chrome DevTools to debug layout issues, network requests, and JavaScript errors."
       ]
