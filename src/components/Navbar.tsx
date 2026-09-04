@@ -30,12 +30,21 @@ export default function Navbar() {
   const toggleMenu = () => setIsOpen((prev) => !prev);
   const closeMenu = () => setIsOpen(false);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="fixed top-0 w-full z-50 transition-all duration-300 bg-white/90 backdrop-blur-md border-b border-sky-100 shadow-sm shadow-sky-100/40">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 h-20 flex justify-between items-center">
         {/* Brand Logo */}
         <a
           href="#home"
+          onClick={(e) => handleScroll(e, "home")}
           className="flex items-center gap-3 cursor-pointer group flex-shrink-0"
           aria-label="Go to top of page"
         >
@@ -57,6 +66,7 @@ export default function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
+                onClick={(e) => handleScroll(e, id)}
                 className={`text-sm lg:text-base font-semibold transition-colors cursor-pointer relative py-1 whitespace-nowrap ${isActive
                     ? "text-sky-700 font-bold"
                     : "text-slate-800 hover:text-sky-700"
@@ -97,7 +107,10 @@ export default function Navbar() {
               <a
                 key={item.label}
                 href={item.href}
-                onClick={closeMenu}
+                onClick={(e) => {
+                  handleScroll(e, id);
+                  closeMenu();
+                }}
                 className={`text-lg font-semibold py-2 px-3 rounded-lg transition-colors ${isActive
                     ? "text-sky-700 bg-sky-50 font-bold border-l-4 border-sky-500"
                     : "text-slate-800 hover:text-sky-700 hover:bg-sky-50"

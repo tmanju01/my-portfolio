@@ -9,6 +9,14 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 export default function Hero() {
   const typingText = useTypingEffect(portfolioData.roles);
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -75,6 +83,7 @@ export default function Hero() {
           <div className="flex flex-wrap gap-4 mb-10 animate-fade-in-up animation-delay-400">
             <a
               href="#projects"
+              onClick={(e) => handleScroll(e, "projects")}
               className="px-8 py-3.5 bg-gradient-to-r from-sky-500 to-cyan-600 hover:from-sky-600 hover:to-cyan-700 text-white rounded-xl font-semibold transition-all shadow-lg shadow-sky-500/25 active:scale-95 cursor-pointer"
             >
               View Projects
