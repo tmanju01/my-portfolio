@@ -136,12 +136,12 @@ export default function Hero() {
           <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full p-2.5 bg-gradient-to-tr from-sky-400 via-cyan-500 to-teal-400 shadow-[0_10px_40px_rgba(2,132,199,0.25)] transition-all duration-500 hover:scale-105">
             <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white bg-white">
               <Image
-                src="/profile-pic.png"
+                src="/profile-pic.jpeg"
                 alt={portfolioData.name}
                 fill
                 sizes="(max-width: 768px) 16rem, (max-width: 1200px) 20rem, 24rem"
                 priority
-                className="object-cover object-[center_15%]"
+                className="object-cover object-top"
               />
             </div>
           </div>
