@@ -8,9 +8,21 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Manju Thakor",
-  description: "Welcome to Manju's Portfolio. Full-Stack Web Developer and Android App Developer",
-  keywords: ["Manju Thakor", "portfolio", "manju", "full stack dev", "personal portfolio lifecodes", "portfolio design", "portfolio website", "personal portfolio"],
+  title: "Manju Thakor | Frontend Developer Portfolio",
+  description:
+    "Welcome to Manju Thakor's portfolio! I'm a Frontend Developer with 3+ years of experience in React.js, Next.js, JavaScript, and modern web development. Explore my projects, skills, and experience.",
+  keywords: [
+    "Manju Thakor",
+    "Frontend Developer",
+    "React.js Developer",
+    "Next.js Developer",
+    "JavaScript Developer",
+    "Full Stack Developer",
+    "Web Developer Portfolio",
+    "React Developer Portfolio",
+    "Personal Portfolio",
+    "Frontend Developer Ahmedabad",
+  ],
   authors: [{ name: "Manju Thakor" }],
   icons: {
     icon: [
